@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="jm/jquery.mobile-1.4.5.min.css">
+  <script src="jm/jquery-1.11.3.min.js"></script>
+  <script src="jm/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" href="jm/css/themes/rgb.min.css" />
+  <link rel="stylesheet" href="jm/css/themes/jquery.mobile.icons.min.css" />
+  <style>
+   .ui-block-a, .ui-block-b, .ui-block-c {
+    background-color: blue;
+    border: 1px solid black;
+    height: 200 px;
+	width: 100%;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+th {
+    border-bottom: 1px solid #d6d6d6;
+}
+tr:nth-child(even) {
+    background: #616616;
+}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="hal1">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Welcome</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <p>Ini Halaman Awal, Selamat Datang ! ! !</p>
+  </div>
+
+  <div data-role="footer">
+  <center>
+  <a href="#hal2" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div> 
+
+<div data-role="page" id="hal2">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Nama</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Diemas Bagas Panca Pradana</a>
+
+	<div data-role="popup" id="myPopup" class="ui-content">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+  <ul>Biasa dipanggil Bagas, atau bisa juga dipanggil Diemas</ul>
+	</div>
+  <div data-role="collapsible">
+  <h4>Nama Samaran</h4>
+  <ul>caspersatudua</ul>
+  <ul>koorojinx</ul>
+</div>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal3" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal3">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Alamat</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <p>Dusun Sumberkepuh Desa Klurahan RT 01 RW 06 Kecamatan Ngronggot 64395 Kabupaten Nganjuk Jawa Timur Indonesia</p>
+  <div data-role="collapsible">
+  <h4>Alamat Kost</h4>
+  <ul>Ketintang Timur PTT 4 Nomer 32 Gayungan Surabaya</ul>
+</div>
+</div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal4" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal4">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Jenis Kelamin</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+   <div data-role="main" class="ui-content">
+  <img src="file/male.png" width="100%" height="100%"/img>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal5" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal5">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Tempat Tanggal Lahir</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <a href="#" class="ui-btn ui-corner-all ui-shadow">Nganjuk</a>
+  <a href="#" class="ui-btn ui-corner-all ui-shadow">16 Agustus 1995</a>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal6" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal6">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Kenegaraan</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Indonesia</a>
+
+	<div data-role="popup" id="myPopup2" class="ui-content">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+  <img src="file/ina.png" width="100%" height="100%"/img>
+	</div>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal7" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal7">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>E-mail</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <div class="ui-grid-b ui-responsive">
+      <div align="center">
+      <div class="ui-block-a"><span>diemasbagas@gmail.com</span></div>
+      <div class="ui-block-a"><span>diemasbagas@yahoo.com</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal8" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal8">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Pekerjaan</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <p>Mahasiswa</p>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal9" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal9">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Sosial Media</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+    <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable">
+      <thead>
+        <tr>
+          <th>Media Sosial</th>
+          <th data-priority="1">User Name</th>
+          <th data-priority="2">Nama</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Facebook</td>
+          <td>caspersatudua</td>
+          <td>Diemas Bagas Panca Pradana</td>
+        </tr>
+        <tr>
+          <td>Twitter</td>
+          <td>caspersatudua</td>
+          <td>Diemas Bagas Panca Pradana</td>
+        </tr>
+        <tr>
+          <td>Instagram</td>
+          <td>diemasbagas</td>
+          <td>Diemas Bagas Panca Pradana</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal10" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal10">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Hobby</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <p>Mencoba Hal Baru</p>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal11" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal11">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Nama Orang Tua</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+      <div class="ui-block-a"><span>Ponco Yuliono</span></div>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal12" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal12">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Riwayat Pendidikan</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <table width="100%" border="0" cellspacing="1" cellpadding="1">
+  <tr>
+    <td width="40%">SD</td>
+	<td width="10%">:</td>
+    <td width="50%">SDN KLURAHAN 3</td>
+  </tr>
+  <tr>
+    <td>SMP</td>
+	<td>:</td>
+    <td>SMPN 1 KERTOSONO</td>
+  </tr>
+  <tr>
+    <td>SMA</td>
+	<td>:</td>
+    <td>SMAN 1 KERTOSONO</td>
+  </tr>
+</table>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal13" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal13">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Status Perkawinan</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <p>Belum Menikah</p>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal14" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal14">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Game Favorit</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <p><img src="file/coc.png" width="100%" height="100%"/></p>
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  <a href="#hal15" data-transition="slideup" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Next</a></center>
+  </div>
+</div>
+
+<div data-role="page" id="hal15">
+<div data-role="panel" id="myPanel">
+  <h2>MENU</h2>
+  <p><a href="#hal1" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Beranda</a></p>
+  <p><a href="#hal2" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama</a></p>
+  <p><a href="#hal3" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Alamat</a></p>
+  <p><a href="#hal4" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Jenis Kelamin</a></p>
+  <p><a href="#hal5" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Tempat Tanggal Lahir</a></p>
+  <p><a href="#hal6" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Kenegaraan</a></p>
+  <p><a href="#hal7" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">E-mail</a></p>
+  <p><a href="#hal8" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Pekerjaan</a></p>
+  <p><a href="#hal9" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Sosial Media</a></p>
+  <p><a href="#hal10" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Hobby</a></p>
+  <p><a href="#hal11" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Nama Orang Tua</a></p>
+  <p><a href="#hal12" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Riwayat pendidikan</a></p>
+  <p><a href="#hal13" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Status Perkawinan</a></p>
+  <p><a href="#hal14" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Game Favorit</a></p>
+  <p><a href="#hal15" class="ui-btn ui-corner-all ui-shadow ui-icon-info ui-btn-icon-left">Video Hiburan</a></p>
+</div>
+
+  <div data-role="header">
+  <a href="#myPanel" class="ui-btn ui-icon-grid ui-btn-icon-left">Menu</a>
+  <h1>Video Hiburan</h1>
+  
+  	<div data-role="navbar">
+    <ul>
+      <li><a href="#hal1">Home</a></li>
+      <li><a href="#hal15">Hiburan</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div data-role="main" class="ui-content">
+   <video width="100%" controls>
+  <source src="file/coc.mp4" type="video/mp4"/>
+</video> 
+  </div>
+
+  <div data-role="footer">
+  <center><a href="#" data-rel="back" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">Previous</a>
+  </center>
+  </div>
+</div>
+
+</body>
+</html>
